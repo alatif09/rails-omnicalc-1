@@ -14,7 +14,7 @@
     <p>$<%= '%.2f' % params[:user_pv].to_f %></p>
 
     <p>Payment</p>
-    <p><%= to_s_currency(@payment) %></p>
+    <p>$<%= number_with_delimiter('%.2f' % @payment) %></p>
 
     <a href="/payment/new">Calculate another payment</a>
 </body>
